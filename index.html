@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="topbar">
+        <div class="brand">
+          <img
+            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=120&q=80"
+            alt="Budget tracker logo"
+            width="60"
+          />
+          <h1>Budget Tracker</h1>
+        </div>
+      </header>
+
+      <main>
+        <section class="add-expense-section">
+          <h2>Add an Expense</h2>
+          <form>
+            <div class="field-group">
+              <label for="expense-name">Expense Name</label>
+              <input
+                type="text"
+                id="expense-name"
+                name="expense-name"
+                placeholder="Groceries"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="expense-amount">Amount</label>
+              <input
+                type="number"
+                id="expense-amount"
+                name="expense-amount"
+                placeholder="0.00"
+                min="0"
+                step="0.01"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="expense-category">Category</label>
+              <select id="expense-category" name="expense-category">
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Rent">Rent</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="field-group">
+              <label for="expense-date">Date</label>
+              <input type="date" id="expense-date" name="expense-date" />
+            </div>
+
+            <button type="button" class="add-btn">Add Expense</button>
+          </form>
+        </section>
+
+        <section class="expenses-section">
+          <h2>Recent Expenses</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Groceries</td>
+                <td>R 420.00</td>
+                <td>Food</td>
+                <td>2026-10-01</td>
+              </tr>
+              <tr>
+                <td>Taxi Ride</td>
+                <td>R 90.00</td>
+                <td>Transport</td>
+                <td>2026-10-02</td>
+              </tr>
+              <tr>
+                <td>Apartment Rent</td>
+                <td>R 3500.00</td>
+                <td>Rent</td>
+                <td>2026-10-03</td>
+              </tr>
+              <tr>
+                <td>Movie Night</td>
+                <td>R 160.00</td>
+                <td>Entertainment</td>
+                <td>2026-10-04</td>
+              </tr>
+              <tr>
+                <td>Household Supplies</td>
+                <td>R 250.00</td>
+                <td>Other</td>
+                <td>2026-10-05</td>
+              </tr>
+              <tr>
+                <td>Lunch Meeting</td>
+                <td>R 180.00</td>
+                <td>Food</td>
+                <td>2026-10-06</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="info-section">
+          <details>
+            <summary>How to use this tracker</summary>
+            <p>
+              Use the form to add a new expense, choose the right category, and note the date.
+              The tracker keeps a simple overview of your spending so you can review recent costs
+              at a glance.
+            </p>
+          </details>
+        </section>
+
+        <section class="video-section">
+          <h2>Budgeting Tip</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4A8dXu6fW7M?si=98AiZpM1zvD0TYkJ"
+            title="Money-saving budgeting tips"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
